@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".EmployeeRestActivity">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="200sp"
+        android:layout_height="169sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/man"
+        app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:text="Welcome to Workflow"
+        android:layout_below="@id/imageView"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Login"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tv_welcome"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Password"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/tv_welcome"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:id="@+id/layout_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_first_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:background="@drawable/squareboxes">
+
+        <ImageView
+            android:id="@+id/editAccountIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_user"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/label_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/layout_first_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:background="@drawable/squareboxes">
+
+        <ImageView
+            android:id="@+id/password"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_password"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/darkgreen"
+        android:layout_below="@id/layout_password"
+        android:text=" Save Login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="15dp" />
+
+    <!-- "Or continue with" Section with Horizontal Lines -->
+    <LinearLayout
+        android:id="@+id/continue_with_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <!-- Left Horizontal Line -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+        <!-- "Or continue with" Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or continue with"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <!-- Right Horizontal Line -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/continue_with_section"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Google Logo"
+                android:src="@drawable/ic_google" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+

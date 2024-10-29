@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".EmployeeHolidayRequestActivity">
+
+    <!-- Back Button Icon -->
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_back"/>
+
+    <!-- Profile Image -->
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="200sp"
+        android:layout_height="169sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/guy"
+        app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+    <!-- Employee Name -->
+    <TextView
+        android:id="@+id/tv_employee_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raj Mehera"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/holiday_request_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_employee_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Holiday Request"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <!-- Subtitle Text -->
+    <TextView
+        android:id="@+id/select_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/holiday_request_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Please select a date"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- Date Picker -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="212dp"
+        android:layout_below="@id/select_date_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/white"
+        android:dateTextAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <!-- Reason Label -->
+    <TextView
+        android:id="@+id/select_reason_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendarView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:text="Select The Reason"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+    <!-- Dropdown for Reason -->
+    <Spinner
+        android:id="@+id/reason_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_reason_label"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/white"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Comment Box -->
+    <TextView
+        android:id="@+id/comment_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reason_spinner"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/darkgreen"
+        android:padding="12dp"
+        android:text="Comment: Going back to get my teeth done"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_box"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue"
+        android:text="Submit Request" />
+
+
+    <!-- Submit Button -->
+
+
+
+
+
+
+
+</RelativeLayout>

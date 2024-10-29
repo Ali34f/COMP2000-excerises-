@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".EmployeeEditDetailsActivity">
+
+    <!-- Back Button Icon -->
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp"
+        android:contentDescription="@string/back2"
+        android:src="@drawable/ic_back"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="200sp"
+        android:layout_height="169sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/guy"
+        app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+    <!-- Employee Name -->
+    <TextView
+        android:id="@+id/tv_employee_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/raj_mehera"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <!-- Settings Page Title -->
+    <TextView
+        android:id="@+id/tv_settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_page_1"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_employee_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Dark Mode Switch Layout -->
+    <LinearLayout
+        android:id="@+id/darkModeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_settings_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_button_green"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/darkModeIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/darkmode"
+            android:src="@drawable/ic_darkmode" />
+
+        <TextView
+            android:id="@+id/tv_dark_mode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="@string/mode"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_notifications2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:thumbTint="@color/white"
+            android:trackTint="@color/gray" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_above_subtext"
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/darkModeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/white" />
+
+    <!-- Edit Account Button -->
+    <LinearLayout
+        android:id="@+id/editAccountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/divider_above_subtext"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_button_green"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/editAccountIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/edit_account"
+            android:src="@drawable/ic_username" />
+
+        <TextView
+            android:id="@+id/tv_edit_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="@string/edit_account"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/editAccountArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/clickright"
+            android:src="@drawable/ic_arrow" />
+    </LinearLayout>
+
+    <!-- Logout Button -->
+    <LinearLayout
+        android:id="@+id/logoutLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/editAccountLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_button_green"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/logoutIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/logout"
+            android:src="@drawable/ic_logout" />
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="@string/logout1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Delete Account Button -->
+    <LinearLayout
+        android:id="@+id/deleteAccountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/logoutLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_button_green"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/deleteAccountIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/delete"
+            android:src="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/tv_delete_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="@string/delete_account"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_above_subtext2"
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/deleteAccountLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/white" />
+
+    <!-- Notifications Switch Layout -->
+    <LinearLayout
+        android:id="@+id/notificationsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/divider_above_subtext2"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_button_green"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/notificationsIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/notfi"
+            android:src="@drawable/ic_notification" />
+
+        <TextView
+            android:id="@+id/tv_notifications"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="@string/notifications"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:thumbTint="@color/white"
+            android:trackTint="@color/gray" />
+    </LinearLayout>
+
+    <!-- Help Button -->
+    <LinearLayout
+        android:id="@+id/helpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/notificationsLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_button_green"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/helpIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/help"
+            android:src="@drawable/ic_help" />
+
+        <TextView
+            android:id="@+id/tv_help"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="@string/help1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>
