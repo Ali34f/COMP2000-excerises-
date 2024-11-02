@@ -24,37 +24,38 @@
         android:layout_width="200sp"
         android:layout_height="169sp"
         android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
         android:scaleType="centerCrop"
         android:src="@drawable/guy"
-        app:shapeAppearanceOverlay="@style/roundedImageView" />
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        tools:ignore="ImageContrastCheck" />
 
     <!-- Employee Name -->
     <TextView
         android:id="@+id/tv_employee_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:text="@string/raj_mehera"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_below="@id/imageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        tools:ignore="TextContrastCheck" />
 
     <!-- Settings Page Title -->
     <TextView
         android:id="@+id/tv_settings_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/settings_page_1"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
         android:layout_below="@id/tv_employee_name"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:text="@string/settings_page_1"
+        android:textColor="#8D6E63"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <!-- Dark Mode Switch Layout -->
     <LinearLayout
@@ -95,7 +96,8 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:thumbTint="@color/white"
-            android:trackTint="@color/gray" />
+            android:trackTint="@color/gray"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
 
     </LinearLayout>

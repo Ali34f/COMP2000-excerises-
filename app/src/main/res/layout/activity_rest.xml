@@ -25,35 +25,38 @@
         android:id="@+id/tv_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_centerInParent="true"
-        android:text="Welcome to Workflow"
         android:layout_below="@id/imageView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/welcome_to_workflow"
         android:textColor="@color/white"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please Login"
-        android:layout_centerInParent="true"
         android:layout_below="@id/tv_welcome"
+        android:layout_centerInParent="true"
+        android:text="@string/loginText"
         android:textColor="@color/white"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/label_first_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Password"
+        android:layout_below="@id/tv_welcome"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/new_password"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:layout_below="@id/tv_welcome"
-        android:layout_marginTop="45dp"
-        android:layout_marginLeft="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
     <LinearLayout
         android:id="@+id/layout_first_name"
         android:layout_width="match_parent"
@@ -69,6 +72,7 @@
             android:id="@+id/editAccountIcon"
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:contentDescription="@string/ic_user"
             android:src="@drawable/ic_user"/>
 
     </LinearLayout>
@@ -77,13 +81,14 @@
         android:id="@+id/label_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirm Password"
+        android:layout_below="@id/layout_first_name"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/confirm_password"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:layout_below="@id/layout_first_name"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
 
     <LinearLayout
         android:id="@+id/layout_password"
@@ -100,6 +105,7 @@
             android:id="@+id/password"
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:contentDescription="@string/ic_password"
             android:src="@drawable/ic_password"/>
 
     </LinearLayout>
@@ -114,12 +120,13 @@
         android:layout_marginTop="35dp"
         android:backgroundTint="@color/darkgreen"
         android:layout_below="@id/layout_password"
-        android:text=" Save Login"
+        android:text="@string/save_login"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:padding="15dp" />
+        android:padding="15dp"
+        tools:ignore="VisualLintButtonSize" />
 
     <!-- "Or continue with" Section with Horizontal Lines -->
     <LinearLayout
@@ -143,12 +150,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Or continue with"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:textSize="14sp"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp" />
+            android:layout_marginEnd="10dp"
+            android:text="@string/or_continue_with"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
 
         <!-- Right Horizontal Line -->
         <View
@@ -173,19 +181,20 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UseCompoundDrawables,UselessParent">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginEnd="8dp"
-                android:contentDescription="Google Logo"
+                android:contentDescription="@string/google_logo"
                 android:src="@drawable/ic_google" />
 
             <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Google"
+            android:text="@string/google"
             android:textSize="16sp"
             android:textColor="@color/black"
             android:padding="2dp"

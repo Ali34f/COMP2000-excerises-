@@ -39,6 +39,46 @@
     <string name="notifications">Notifications</string>
     <string name="help">TODO</string>
     <string name="help1">Help</string>
+    <string name="loginText">Please Login</string>
+    <string name="man">man</string>
+    <string name="or_continue_with">Or continue with</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="googlelogo">Google Logo</string>
+    <string name="google">Google</string>
+    <string name="hand">Hand</string>
+    <string name="password">Password</string>
+    <string name="welcome_to_workflow">Welcome to Workflow</string>
+    <string name="software_developer">Software Developer</string>
+    <string name="edit_employee_details">Edit Employee Details</string>
+    <string name="settings">Settings</string>
+    <string name="ic_settings">TODO</string>
+    <string name="ic_info">TODO</string>
+    <string name="information">Information</string>
+    <string name="_8_days_holiday_remaining">8 days holiday remaining</string>
+    <string name="request_holiday">Request Holiday</string>
+    <string name="ic_request">TODO</string>
+    <string name="ic_details">TODO</string>
+    <string name="my_employee_details">My Employee Details</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="welcome_raj_mehera">Welcome Raj Mehera</string>
+    <string name="your_password_has_been_changed_and_you_can_now_log_back_in">Your Password has been changed and you can now log back in!</string>
+    <string name="password_rest_done">Password Rest Done</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="ic_user">TODO</string>
+    <string name="ic_password">TODO</string>
+    <string name="save_login">Save Login</string>
+    <string name="your_holiday_request_has_been_sent">Your Holiday Request has been sent</string>
+    <string name="your_request_has_been_sent_and_waiting_for_approval">Your request has been sent and waiting for approval</string>
+    <string name="tick">tick</string>
+    <string name="your_request_has_been_approved">Your Request has been Approved</string>
+    <string name="your_request_has_been_approved_by_the_administrator">Your request has been approved by the administrator</string>
+    <string name="holiday_request">Holiday Request</string>
+    <string name="please_select_a_date">Please select a date</string>
+    <string name="select_the_reason">Select The Reason</string>
+    <string name="submit_request">Submit Request</string>
+    <string name="comment_going_back_to_get_my_teeth_done">Comment: Going back to get my teeth done</string>
 
 
 </resources>
