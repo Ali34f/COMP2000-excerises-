@@ -27,37 +27,39 @@
         android:layout_width="200sp"
         android:layout_height="169sp"
         android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
         android:scaleType="centerCrop"
         android:src="@drawable/guy"
-        app:shapeAppearanceOverlay="@style/roundedImageView" />
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        tools:ignore="ImageContrastCheck" />
 
     <!-- Employee Name -->
     <TextView
         android:id="@+id/tv_employee_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:text="@string/raj_mehera2"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_below="@id/imageView"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true" />
+        tools:ignore="TextContrastCheck" />
 
     <!-- First Name Label -->
     <TextView
         android:id="@+id/label_first_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_employee_name"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:text="@string/first_name"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:layout_below="@id/tv_employee_name"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
 
     <!-- First Name Value Inside Dark Green Box -->
     <LinearLayout
@@ -87,13 +89,14 @@
         android:id="@+id/label_last_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/layout_first_name"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:text="@string/last_name"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:layout_below="@id/layout_first_name"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
 
     <LinearLayout
         android:id="@+id/layout_last_name"
@@ -121,13 +124,14 @@
         android:id="@+id/label_Dateof_birth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/layout_last_name"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:text="@string/date_of_birth"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:layout_below="@id/layout_last_name"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
 
     <LinearLayout
         android:id="@+id/layout_Dateof_Birth"
@@ -154,13 +158,14 @@
         android:id="@+id/label_Gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/layout_Dateof_Birth"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:text="@string/gender"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:layout_below="@id/layout_Dateof_Birth"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
 
     <LinearLayout
         android:id="@+id/layout_Gender"
@@ -187,13 +192,14 @@
         android:id="@+id/label_Position"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/layout_Gender"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:text="@string/position"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:layout_below="@id/layout_Gender"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
 
     <LinearLayout
         android:id="@+id/layout_Position"

@@ -12,37 +12,39 @@
         android:layout_width="200sp"
         android:layout_height="169sp"
         android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
         android:scaleType="centerCrop"
         android:src="@drawable/guy"
-        app:shapeAppearanceOverlay="@style/roundedImageView" />
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        tools:ignore="ImageContrastCheck" />
 
     <!-- Employee Name -->
     <TextView
         android:id="@+id/tv_employee_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Raj Mehera"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/raj_mehera"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_below="@id/imageView"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true" />
+        tools:ignore="TextContrastCheck" />
 
     <!-- "Your request has been" text -->
     <TextView
         android:id="@+id/tv_changes_saved"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Holiday Request has been sent"
+        android:layout_below="@id/tv_employee_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/your_holiday_request_has_been_sent"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_below="@id/tv_employee_name"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp" />
+        tools:ignore="TextContrastCheck" />
 
     <!-- Horizontal divider between "Your request has been sent" and subtext -->
     <View
@@ -59,12 +61,13 @@
         android:id="@+id/tv_subtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your request has been sent and waiting for approval "
-        android:textColor="@color/white"
-        android:textSize="14sp"
         android:layout_below="@id/divider_above_subtext"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:text="@string/your_request_has_been_sent_and_waiting_for_approval"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:ignore="TextContrastCheck" />
 
     <!-- Another divider below subtext if needed -->
     <View
@@ -87,7 +90,7 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:padding="10dp"
-        android:text="Done" />
+        android:text="@string/done" />
 
     <ImageView
         android:id="@+id/tick_icon"
@@ -96,6 +99,7 @@
         android:layout_below="@id/buttondone"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
+        android:contentDescription="@string/tick"
         android:src="@drawable/ic_tick" />
 
 
